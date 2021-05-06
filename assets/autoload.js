@@ -1,9 +1,9 @@
 try {
     if (!isMobileBrowser()) {
-        $("<link>").attr({href: "https://cdn.jsdelivr.net/gh/luckykeeper/LuckyBlogV2_css-js@1.017/assets/waifu.min.css?v=1.4.2", rel: "stylesheet", type: "text/css"}).appendTo('head');
+        $("<link>").attr({href: "//cdn.jsdelivr.net/gh/luckykeeper/LuckyBlogV2_css-js@1.017/assets/waifu.min.css?v=1.4.2", rel: "stylesheet", type: "text/css"}).appendTo('head');
         $('body').append('<div class="waifu"><div class="waifu-tips"></div><canvas id="live2d" class="live2d"/><div class="waifu-tool"><span class="fui-home"/> <span class="fui-chat"/> <span class="fui-eye"/> <span class="fui-user"/> <span class="fui-photo"/> <span class="fui-info-circle"/> <span class="fui-cross"/></div></div>');
-        $.ajax({url: 'https://cdn.jsdelivr.net/gh/luckykeeper/LuckyBlogV2_css-js@1.017/assets/waifu-tips.min.js?v=1.4.2', dataType: "script", cache: true, async: false});
-        $.ajax({url: 'https://cdn.jsdelivr.net/gh/luckykeeper/LuckyBlogV2_css-js@1.017/assets/live2d.min.js?v=1.0.5', dataType: "script", cache: true, async: false});
+        $.ajax({url: '//cdn.jsdelivr.net/gh/luckykeeper/LuckyBlogV2_css-js@1.017/assets/waifu-tips.min.js?v=1.4.2', dataType: "script", cache: true, async: false});
+        $.ajax({url: '//cdn.jsdelivr.net/gh/luckykeeper/LuckyBlogV2_css-js@1.017/assets/live2d.min.js?v=1.0.5', dataType: "script", cache: true, async: false});
         /* 可直接修改部分参数 */
         live2d_settings['hitokotoAPI'] = 'hitokoto.cn';  // 一言 API
         live2d_settings['modelId'] = 1;                  // 默认模型 ID
@@ -12,7 +12,7 @@ try {
         live2d_settings['waifuEdgeSide'] = 'right:30';
         live2d_settings['homePageUrl'] = '/';
         /* 在 initModel 前添加 */
-        initModel('https://cdn.jsdelivr.net/gh/luckykeeper/LuckyBlogV2_css-js@1.017/assets/waifu-tips.json');
+        initModel('//cdn.jsdelivr.net/gh/luckykeeper/LuckyBlogV2_css-js@1.017/assets/waifu-tips.json');
     } else {
         console.log('手机端不显看板娘~！')
     }
